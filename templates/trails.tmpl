@@ -4,25 +4,22 @@
     <ul class="nav navbar-nav pager">
   </TMPL_IF>
     <TMPL_IF PREVPAGE>
-      <li>
-        <button type="button" class="btn btn-default" aria-label="Left Align">
-          <span class="glyphicon glyphicon-menu-left"></span>
-          <a href="<TMPL_VAR PREVURL>"><TMPL_VAR PREVTITLE></a>
-        </button>
+      <li class="previous">
+          <a href="<TMPL_VAR PREVURL>">
+              <span class="glyphicon glyphicon-menu-left"></span>
+          <TMPL_VAR PREVTITLE></a>
       </li>
     </TMPL_IF>
-    <li>
-      <button type="button" class="btn btn-default" aria-label="Right Align">
+    <li class="up">
+        <a href="<TMPL_VAR TRAILURL>">
           <span class="glyphicon glyphicon-menu-up"></span>
-        <a href="<TMPL_VAR TRAILURL>"><TMPL_VAR TRAILTITLE></a>
-      </button>
+        <TMPL_VAR TRAILTITLE></a>
     </li>
     <TMPL_IF NEXTPAGE>
-      <li>
-        <button type="button" class="btn btn-default" aria-label="Right Align">
-          <a href="<TMPL_VAR NEXTURL>"><TMPL_VAR NEXTTITLE></a>
+      <li class="next">
+          <a href="<TMPL_VAR NEXTURL>"><TMPL_VAR NEXTTITLE>
           <span class="glyphicon glyphicon-menu-right"></span>
-        </button>
+          </a>
       </li>
     </TMPL_IF>
   <TMPL_IF __LAST__>
