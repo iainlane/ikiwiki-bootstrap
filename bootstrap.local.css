@@ -64,12 +64,12 @@ code {
 
 /* try Fira Font, fallback on bootstrap fonts */
 body {
-    font-family: "Fira Sans", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Fira Sans","Droid Sans","Liberation Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     /* font-weight: 300; */ /* this would be a little more like the
     weight of "sans-serif" here, but is too light. */
 }
 pre, code {
-    font-family: "Fira Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-family: "Fira Mono", "Liberation mono", Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 /* don't word-wrap PRE blocks so they are scrolled*/
