@@ -69,7 +69,7 @@ body {
     weight of "sans-serif" here, but is too light. */
 }
 pre, code {
-    font-family: "Fira Mono", "Liberation mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-family: "Fira Mono", Menlo, Monaco, Consolas, "Courier New", "Liberation mono", monospace;
 }
 
 /* don't word-wrap PRE blocks so they are scrolled*/
