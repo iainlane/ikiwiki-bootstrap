@@ -64,7 +64,7 @@ code {
 
 /* try Fira Font, fallback on bootstrap fonts */
 body {
-    font-family: "Fira Sans","Droid Sans","Liberation Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Fira Sans","Segoe UI","Roboto","Helvetica Neue",Helvetica,Arial,"Droid Sans","Liberation Sans",sans-serif;
     /* font-weight: 300; */ /* this would be a little more like the
     weight of "sans-serif" here, but is too light. */
 }
