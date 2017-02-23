@@ -14,22 +14,22 @@
 
     <title><TMPL_VAR TITLE> - <TMPL_VAR WIKINAME></title>
 
-    <link rel="icon" href="<TMPL_VAR BASEURL>favicon.png" type="image/x-icon" />
+    <link rel="icon" href="/favicon.png" type="image/x-icon" />
 
     <!-- ikiwiki CSS -->
-    <link href="<TMPL_VAR BASEURL>style.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
 
     <!-- Bootstrap core CSS -->
-    <link href="<TMPL_VAR BASEURL>bootstrap.min.css" rel="stylesheet" />
+    <link href="/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="<TMPL_VAR BASEURL>bootstrap.local.css" rel="stylesheet" />
+    <link href="/bootstrap.local.css" rel="stylesheet" />
 
     <!-- Custom styles for derivatives -->
     <TMPL_IF LOCAL_CSS>
-    <link rel="stylesheet" href="<TMPL_VAR BASEURL><TMPL_VAR LOCAL_CSS>" type="text/css" />
+    <link rel="stylesheet" href="/<TMPL_VAR LOCAL_CSS>" type="text/css" />
     <TMPL_ELSE>
-    <link rel="stylesheet" href="<TMPL_VAR BASEURL>local.css" type="text/css" />
+    <link rel="stylesheet" href="/local.css" type="text/css" />
     </TMPL_IF>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -66,8 +66,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<TMPL_VAR BASEURL>">
-            <img alt="<TMPL_VAR WIKINAME>" src="<TMPL_VAR BASEURL>favicon.png" width="50" heigth="50" />
+          <a class="navbar-brand" href="/">
+            <img alt="<TMPL_VAR WIKINAME>" src="/favicon.png" width="50" heigth="50" />
           </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
@@ -226,7 +226,7 @@
       <div class="container">
         <p class="text-muted">
           Copyleft © 2002-2016 The
-          Anarcat <a href="<TMPL_VAR BASEURL>meta/license">CC-BY-SA</a>.
+          Anarcat <a href="/meta/license">CC-BY-SA</a>.
           <!-- Bootstrap theme: © 2011-2015 Twitter, Inc, © 2009-2015 Julian Andres Klode
           <a href="<TMPL_VAR BASEURL>LICENSE">MIT</a>. -->
           <span class="pull-right">
@@ -242,8 +242,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="<TMPL_VAR BASEURL>jquery.min.js"></script>
-    <script src="<TMPL_VAR BASEURL>bootstrap.min.js"></script>
+    <script src="/jquery.min.js"></script>
+    <script src="/bootstrap.min.js"></script>
 
   </body>
 </html>
