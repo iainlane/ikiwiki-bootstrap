@@ -118,8 +118,18 @@ div.footnotes { font-size: small; }
 
 /* make table scale out to avoid ugly word-wrapping
  * bootstrap should deal with this, but ikiwiki doesn't assign the
- * right style and anyways our width is smaller than necessary */
-table, table.table { width: inherit; }
+ * right style and anyways our width is smaller than necessary
+ *
+ * pages with tables that should be checked when this is changed:
+ *
+ * https://anarc.at/blog/2017-10-26-comparison-cryptographic-keycards/
+ * https://anarc.at/blog/2018-01-28-large-disk-price-review/
+ * https://anarc.at/services/backup/
+ * https://anarc.at/services/
+ * https://anarc.at/services/dns/registrars/
+ * https://anarc.at/services/welcome/
+ */
+table, table.table { width: 100%; }
 table { font-size: inherit; } /* why the heck does chrome override font-size for tables?! */
 
 /* this belongs in ikiwiki's style.css, but that needs the admonition
