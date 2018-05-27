@@ -102,6 +102,39 @@ div.footnotes { font-size: small; }
 /* scale down images so they are centered like the rest of the text */
 #content img { max-width: 100%; }
 
+/* format HTML5 captions like ikiwiki's table-based captions
+ *
+ * those work, but basically need to be entered by hand.
+ *
+ * https://ikiwiki.info/todo/html5_image_captions/
+ */
+figure {
+    text-align: center;
+}
+figcaption {
+    text-align: center;
+    font-size: smaller;
+    color: #777;
+}
+
+/* right-aligned figures
+ *
+ * those need a "table" display so that the caption shows up alongside the
+ * figured. we also limit the size of the image so that it does not squeeze the
+ * text too mucha nd had judicious padding.
+ */
+figure.align-right {
+  float: right;
+  padding: 0em 1em;
+  display: table;
+  max-width: 60%;
+}
+figure.align-right figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding: 0.5em 1em;
+}
+
 /* wrap long URLs so that we don't overflow layout
  * this could apply to any element, but we often have to deal with long
  * links so limit to that to avoid unexpected damage */
