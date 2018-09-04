@@ -187,3 +187,19 @@ table { font-size: inherit; } /* why the heck does chrome override font-size for
 #content div.caution { background-image: url("smileys/admon-caution.png"); }
 #content div.warning { background-image: url("smileys/admon-warning.png"); }
 /* admonition end */
+
+.breadcrumb {
+    padding: 1px 0 0 0;
+    border-bottom: none;
+    padding-inline-start: 0px;
+}
+.breadcrumb li {
+    padding: 8px 0 8px 8px;
+}
+.breadcrumb li::before {
+    padding: 0 5px 0 0;
+}
+.page-header {
+    border-bottom: none;
+    margin: 40px 0 0;
+}
