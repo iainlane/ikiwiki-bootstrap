@@ -100,6 +100,14 @@
 
 
           <header class="page-header">
+          <ol class="breadcrumb">
+          <TMPL_LOOP NAME="PARENTLINKS">
+          <TMPL_UNLESS NAME="DEPTH_0">
+          <li><a href="<TMPL_VAR URL>"><TMPL_VAR PAGE></a></li>
+          </TMPL_UNLESS>
+          </TMPL_LOOP>
+          </ol>
+
             <h1><TMPL_VAR TITLE></h1>
           </header>
 
