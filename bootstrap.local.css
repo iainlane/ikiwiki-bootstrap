@@ -203,3 +203,9 @@ table { font-size: inherit; } /* why the heck does chrome override font-size for
     border-bottom: none;
     margin: 40px 0 0;
 }
+
+/* more things to hide in printouts */
+@media print {
+    .footer { display: none; }
+    .addcomment { display: none; }
+}
