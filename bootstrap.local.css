@@ -207,5 +207,6 @@ table { font-size: inherit; } /* why the heck does chrome override font-size for
 /* more things to hide in printouts */
 @media print {
     .footer { display: none; }
+    /* https://ikiwiki.info/todo/hide_add_comment_button_in_print/ */
     .addcomment { display: none; }
 }
