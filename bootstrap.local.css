@@ -213,4 +213,14 @@ table { font-size: inherit; } /* why the heck does chrome override font-size for
     /* remove link explosion in footer */
     .pagedate a[href]::after { content: normal; }
     .footer a[href]::after { content: normal; }
+    /* reset size constraints, paper takes care of that */
+    #content {
+        width: auto;
+        max-width: inherit;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        margin: 0;
+    }
 }
