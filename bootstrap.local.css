@@ -147,6 +147,13 @@ h1, h2, h3, h4, h5 {
 /*  <link rel="stylesheet" href="https://paste.anarc.at/publish/charter/stylesheet.css" type="text/css" charset="utf-8" /> */
 /* we won't ship fira because it is too big and will hope some other font will kick in for headings, preferably Open sans */
 
+/* no idea why bootstrap makes quotes bigger, not what i want */
+blockquote {
+    font-size: 14px;
+    /* make blockquotes interesting */
+    font-style: italic;
+}
+
 /* enlarge body point size for charter for larger displays */
 @media (min-device-width: 750px) {
     body {
@@ -174,12 +181,6 @@ pre {
 }
 pre code {
       white-space: pre;
-}
-/* no idea why bootstrap makes quotes bigger, not what i want */
-blockquote {
-    font-size: 14px;
-    /* make blockquotes interesting */
-    font-style: italic;
 }
 
 /* workaround multimarkdown bug:
