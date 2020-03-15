@@ -331,12 +331,9 @@ table { font-size: inherit; } /* why the heck does chrome override font-size for
  */
 /* make a counter for ordered lists in the table of contents */
 .toc ol {
+    /* this will break ikiwiki unless the following patch is applied: https://ikiwiki.info/todo/allow_toc_to_skip_entries/ */
     counter-reset: section;
     list-style-type: none;
-}
-.toc > ol {
-    /* because ikiwiki parses *all* headings, it counts the first h1 as well, so we want to start at zeron */
-    counter-reset: section -1;
 }
 /* override bootstrap */
 .toc li.L1, .toc li.L2, .toc li.L3, .toc li.L4, .toc li.L5, .toc li.L6 {
