@@ -364,7 +364,7 @@ h4:before {counter-increment: h4; content: counter(h1) "." counter(h2) "." count
 h5:before {counter-increment: h5; content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "}
 h6:before {counter-increment: h6; content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "}
 
-h1.nocount:before, h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before, div.nocount h1, div.nocount h2, div.nocount h3, div.nocount h4, div.nocount h5, div.nocount h6 {
+h1.nocount:before, h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before, div.nocount h1:before, div.nocount h2:before, div.nocount h3:before, div.nocount h4:before, div.nocount h5:before, div.nocount h6:before {
     content: ""; counter-increment: none
 }
 
