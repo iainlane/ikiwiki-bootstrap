@@ -375,5 +375,3 @@ h1.nocount:before, h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.n
 header h1::before {
     content: "";
 }
-/* and it needs to not count */
-body {counter-reset: h1 -1}
