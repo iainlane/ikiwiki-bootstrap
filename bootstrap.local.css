@@ -231,6 +231,12 @@ figure.align-right figcaption {
     word-wrap: break-word;
 }
 
+.copyright {
+    display: block;
+    text-align: right;
+    opacity:  0.4;
+}
+
 /* transparent on top because links disappear behind otherwise */
 .navbar-fixed-top { background: none; }
 /* .in gets added by bootstrap on pop-up */
