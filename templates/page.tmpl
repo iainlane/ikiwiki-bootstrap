@@ -128,22 +128,10 @@
             <TMPL_IF HTML5></section><TMPL_ELSE></div></TMPL_IF>
             </TMPL_IF>
 
-            <div class="pagedate">
-            <span class="created">Created <TMPL_VAR CTIME>.</span>
-            <span class="edited">
-            <TMPL_IF HISTORYURL>
-            <a href="<TMPL_VAR HISTORYURL>">Edited <TMPL_VAR MTIME>.</a>
-            <TMPL_ELSE>
-            Edited <TMPL_VAR MTIME>.
-            </TMPL_IF>
-            </span>
-            </div>
-
             <TMPL_IF HTML5><nav class="navbar navbar-default">
                 <TMPL_ELSE>
                   <div class="navbar navbar-default">
             </TMPL_IF>
-            <div class="navbar-brand"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
             <div class="container-fluid">
 
             <div class="navbar-header">
@@ -156,10 +144,6 @@
             </div>
 
             <div id="navbar-footer" class="collapse navbar-collapse">
-            <TMPL_IF SEARCHFORM>
-              <TMPL_VAR SEARCHFORM>
-            </TMPL_IF>
-
             <ul class="nav navbar-nav navbar-right">
             <TMPL_IF TAGS>
               <li class="dropdown">
