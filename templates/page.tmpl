@@ -12,7 +12,7 @@
     </TMPL_IF>
     </TMPL_IF>
 
-    <title><TMPL_VAR TITLE> - <TMPL_VAR WIKINAME></title>
+    <title><TMPL_VAR TITLE></title>
 
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
@@ -56,9 +56,18 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="<TMPL_VAR BASEURL>">
-            /
-          </a>
+          <a class="navbar-brand" href="<TMPL_VAR BASEURL>">~</a>
+          <TMPL_LOOP PARENTLINKS>
+            <TMPL_IF NAME="DEPTH_0">
+            <TMPL_ELSE>
+              <div class="navbar-brand">/ <TMPL_VAR TITLE></div>
+              <a href="<TMPL_VAR NAME=URL>" class="navbar-brand"><TMPL_VAR NAME=PAGE></a>
+            </TMPL_IF>
+          </TMPL_LOOP>
+          <TMPL_IF HAS_PARENTLINKS>
+            <div class="navbar-brand">/</div>
+            <div class="navbar-brand"><TMPL_VAR TITLE></div>
+          </TMPL_IF>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <TMPL_IF SIDEBAR>
@@ -80,13 +89,6 @@
 
           <header class="page-header">
             <h1 class="nocount"><TMPL_VAR TITLE></h1>
-              <ol class="breadcrumb">
-              <TMPL_LOOP NAME="PARENTLINKS">
-              <TMPL_UNLESS NAME="DEPTH_0">
-                <li><a href="<TMPL_VAR URL>"><TMPL_VAR PAGE></a></li>
-              </TMPL_UNLESS>
-              </TMPL_LOOP>
-            </ol>
           </header>
 
             <TMPL_VAR CONTENT>
